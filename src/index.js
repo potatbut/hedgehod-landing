@@ -1,6 +1,6 @@
 import "./import-jquery"
-
 import './style/style.scss'
+
 console.log('ДОБРЫЙ ДЕНЬ')
 
 const catalog = document.querySelector('.catalog')
@@ -21,3 +21,25 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation()
 });
+
+
+function showModal() {
+  $('#popup').fadeIn('fast')
+}
+
+$('.popup__close-button').click(function(){
+  $('#popup').fadeOut(500)
+})
+$('.popup__button').click(function(){
+  $('#popup').fadeOut(500)
+})
+
+$(document).on('click', function(e) {
+  if (!$(e.target).closest('.popup__container').length) {
+    $('#popup').fadeOut(500)
+    console.log(!$(e.target).closest('container').length)
+  }
+  e.stopPropagation()
+});
+
+setTimeout(showModal, 300);

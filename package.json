@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jquery-confirm": "^3.3.4",
+    "jscpd-badge-reporter": "^1.1.3"
   }
 }

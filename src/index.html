@@ -10,6 +10,53 @@
 <body>
   <div class="container">
 
+    <div id="popup">
+      <div class="popup__container">
+        <div class="popup__wrapper">
+          <button class='popup__close-button'>
+            <span class="material-icons">
+            close
+            </span>
+          </button>
+
+          <div class="popup__headline">
+            получить бесплатную
+            консультацию
+          </div>
+          <select class="popup__dropdown">
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Казань">Казань</option>
+            <option value="Нижний Новгород">Нижний Новгород</option>
+            <option value="Челябинск">Челябинск</option>
+            <option value="Омск">Омск</option>
+            <option value="Самара">Самара</option>
+          </select>
+          <input type="text" class="popup__input" placeholder="Ваше имя">
+          <input type="text" class="popup__input" placeholder="Телефон">
+          <div class="popup__checkbox">
+            <input type="checkbox" checked>
+            <label for="popup__checkbox">Хочу приобрести ёжика</label>
+          </div>
+          <div class="popup__checkbox">
+            <input type="checkbox">
+            <label for="popup__checkbox">Хочу узнать подробности об уходе</label>
+          </div>
+          <div class="popup__checkbox">
+            <input type="checkbox">
+            <label for="popup__checkbox">Хочу узнать подробности о покупке</label>
+          </div>
+          <button class="popup__button">Отправить</button>
+          <div class="popup__warning">
+            Нажимая кнопку ОТПРАВИТЬ вы соглашаетесь с 
+            <a href="#"> условиями обработки данных </a>
+          </div>
+      </div>
+    </div>
+    </div>
+
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo">
@@ -118,9 +165,74 @@
       </div>
 
     </section>
+
+    <section class="panel-section">
+
+      <div class="panel-section__wrapper">
+        <div class="panel-section__unit unit yellow">
+          <div class="unit__wrapper">
+            <div class="unit__sale-pin">-50%</div>
+            <div class="unit__info-pin">
+              <img src="assets/info.svg" alt="">
+            </div>
+            <div class="unit__name">Ежик “Евгений”</div>
+            <div class="unit__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </div>
+            <div class="unit__old-price">3000 ₽</div>
+            <div class="unit__price">1500 ₽</div>
+            <div class="unit__button">
+              <img src="assets/addToCart.svg" alt="">
+            </div>
+            <div class="unit__image">
+              <img src="assets/hedgehog3.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-section__unit unit green">
+          <div class="unit__wrapper ">
+            <div class="unit__sale-pin">-50%</div>
+            <div class="unit__info-pin">
+              <img src="assets/info.svg" alt="">
+            </div>
+            <div class="unit__name">Ежик “Максим”</div>
+            <div class="unit__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </div>
+            <div class="unit__old-price">3000 ₽</div>
+            <div class="unit__price">1500 ₽</div>
+            <div class="unit__button">
+              <img src="assets/addToCart.svg" alt="">
+            </div>
+            <div class="unit__image">
+              <img src="assets/hedgehog3.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-section__unit unit grey">
+          <div class="unit__wrapper ">
+            <div class="unit__name">Корм для
+              ёжиков</div>
+            <div class="unit__desc">Скомбинированое питание, которое содержит нужное количество витаминов и кальция</div>
+            <div class="unit__price">500 ₽</div>
+            <div class="unit__button">
+              <img src="assets/addToCart.svg" alt="">
+            </div>
+            <div class="unit__image">
+              <img src="assets/food.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
     <footer></footer>
 
   </div>
+
+  
+
+  
   <script src="./index.js"></script>
 </body>
 </html>
