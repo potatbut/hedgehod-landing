@@ -4,26 +4,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Hedgehog</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__wrapper">
-      <div class="header__logo"><img src="./assets/logo.svg" alt=""></div>
-      <div class="header__menu">
-        <div class="header__list"></div>
-        <div class="header__phone">
-          
+  <div class="container">
+
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="./assets/logo-hover.svg" alt="" class="logo-hover">
+          <img src="./assets/logo.svg" alt="" class="logo">
         </div>
-        <div class="header__cart"></div>
+
+        <div class="header__menu">
+
+          <div class="header__list list">
+            <div class="list__wrapper">
+              <ul>
+                <span class="triangle-container">
+                  <span class="material-icons triangle_active">
+                    arrow_drop_down
+                  </span>
+                  <span class="material-icons triangle">
+                      arrow_right
+                  </span>
+                </span>
+                <li class="catalog">
+                  КАТАЛОГ
+                  <ul class="catalog__dropdown" style="display: none;">
+                    <li><a href="#"> ЁЖИКИ </a></li>
+                    <li><a href="#"> ПИТАНИЕ </a></li>
+                    <li><a href="#"> ПЕРЕНОСКИ </a></li>
+                    <li><a href="#"> ЛЕКАРСТВА </a></li>
+                  </ul>
+                </li>
+                <li><a href="#"> О НАС </a></li>
+                <li><a href="#"> КОНТАКТЫ </a></li>
+                <li><a href="#"> ГАЛЕРЕЯ </a></li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="header__phone phone">
+            <div class="phone__wrapper">
+              <div class="phone__logo"><img src="./assets/phoneSign.svg" alt=""></div>
+              <div class="phone__caption">позвоните мне</div>
+              <div class="phone__number">+7 (965) 569-89-98</div>
+            </div>
+          </div>
+          <div class="header__cart">
+            <img src="assets/cart.svg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+    
+    <section class="content-section">
+
+      <div class="content-section__wrapper">
+
+        <div class="content-section__head">
+          <div class="content-section__caption">
+            <img src="assets/caption.svg" alt="">
+          </div>
+          <div class="content-section__tagline">тоже любят молоко</div>
+          <div class="content-section__text">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</div>
+          <div class="content-section__button">
+            <button class="buy-button">Купить ёжика</button>
+          </div>
+        </div>
+
+        <div class="content-section__aside">
+          <div class="content-section__pic_left">
+            <img src="assets/hedgehod1.svg" alt="">
+          </div>
+
+          <div class="content-section__desc">
+
+            <div class="column">
+              <div class="column__wrapper">
+                <div class="column__icon hedgehog"><img src="assets/openmoji_hedgehog.svg" alt=""></div>
+                <div class="column__title">разведение ежиков</div>
+                <div class="column__subtitle">Собственная ферма, уход и содержание</div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="column__wrapper">
+                <div class="column__icon syringe"><img src="assets/la_syringe-solid.svg" alt=""></div>
+                <div class="column__title">здоровье</div>
+                <div class="column__subtitle">Всегда прививаем и вовремя обследуем ваших будущих питомцев</div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="column__wrapper">
+                <div class="column__icon heart"><img src="assets/heart-twotone.svg" alt=""></div>
+                <div class="column__title">любовь и забота</div>
+                <div class="column__subtitle">Каждому ежику мы дарим много внимания</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="content-section__pic_rught">
+            <img src="assets/hedgehog2.svg" alt="">
+          </div>
+        </div>
+
       </div>
 
-    </div>
-  </header>
+    </section>
+    <footer></footer>
 
-  <section></section>
-  <section></section>
-  <footer></footer>
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>
