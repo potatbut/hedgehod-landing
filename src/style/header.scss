@@ -6,6 +6,10 @@
     justify-content: space-between;
     
   }
+  &__burger {
+    display: none;
+    z-index: 999999;
+  }
   &__logo {
     .logo-hover {
       display: none;
@@ -75,6 +79,9 @@
     }
   }
   .phone {
+    &-dropdown {
+      display: none;
+    }
     &__wrapper {
       font-family: $raleway;
       display: grid;
@@ -99,11 +106,101 @@
       font-size: 22px;
     }
   }
-  .show {
-    display: grid;
-  }
-  .hide {
-    display: none;
-  }
+  
+  
 }
 
+@media (max-width: 320px) {
+  .header {
+    .hide {
+      opacity: 0;
+      display: none;
+    }
+    &__burger, .show {
+      display: block;
+      opacity: 1;
+      
+    }
+    &__wrapper {
+      margin-top: 20px;
+      max-width: 280px;
+      align-items: center;
+    }
+    &__logo {
+      width: 56px;
+      height: 26px;
+      z-index: 999999;
+      img.logo {
+        height: 100%;
+        margin-left: 25px;
+      }
+      img.logo-hover {
+        width: 56px;
+        height: 100%;
+        margin-left: 25px;
+      }
+    }
+    &__list{
+      display: none;
+    }
+    .list {
+      &__wrapper ul {
+        display: block;
+        position: absolute;
+        background: $white;
+        left: 0;
+        top: -15px;
+        padding: 100px 40px;
+        width: 210px;
+        height: 280px;
+        border-radius: 0px 10px 10px 0px;
+        li {
+          margin: 20px 0;
+        }
+        span {
+          display: none;
+        }
+        .catalog ul{
+          width: 150px;
+          height: 200px;
+          padding: 0;
+        }
+      }
+    }
+    .phone {
+      width: 40px;
+      &__caption, &__number {
+        display: none;
+      }
+      &__logo {
+        width: 35px;
+        height: 35px;
+      }
+      &-dropdown {
+        position: absolute;
+        left: 30px;
+        top: 400px;
+        &__wrapper {
+          font-family: $raleway;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          font-weight:normal;        
+        }
+        &__caption {
+          text-decoration-line: underline;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+        }
+        &__number {
+          font-size: 22px;
+        }
+      }
+    }
+    &__cart img{
+      margin-top: 3px;
+      width: 26px;
+      height: 26px;
+    }
+    
+  }
+}

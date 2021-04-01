@@ -37,9 +37,12 @@ $('.popup__button').click(function(){
 $(document).on('click', function(e) {
   if (!$(e.target).closest('.popup__container').length) {
     $('#popup').fadeOut(500)
-    console.log(!$(e.target).closest('container').length)
   }
   e.stopPropagation()
 });
 
-setTimeout(showModal, 300);
+setTimeout(showModal, 5000);
+
+$('.header__burger').click(function(event) {
+  $('.header__list, .phone-dropdown').toggleClass("show")
+})
