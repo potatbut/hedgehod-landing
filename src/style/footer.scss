@@ -1,0 +1,49 @@
+.footer {
+  background: $light-green;
+  color: $white;
+  &__wrapper{
+    margin: auto;
+    max-width: 1800px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+  }
+  &__text-container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 9px;
+    font-family: $raleway;
+  }
+  &__list {
+    ul{
+    display: flex;
+    li {
+      margin-left: 90px;
+    }
+  }
+  }
+  &__social {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .phone {
+    &__wrapper {
+      font-family: $raleway;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    &__caption {
+      text-decoration-line: underline;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+    &__number {
+      font-size: 22px;
+    }
+  }
+}
