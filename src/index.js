@@ -44,5 +44,5 @@ $(document).on('click', function(e) {
 setTimeout(showModal, 5000);
 
 $('.header__burger').click(function(event) {
-  $('.header__list, .phone-dropdown').toggleClass("show")
+  $('.list__wrapper, .phone-dropdown, .header__burger').toggleClass("show")
 })

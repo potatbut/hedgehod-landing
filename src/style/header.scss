@@ -79,9 +79,6 @@
     }
   }
   .phone {
-    &-dropdown {
-      display: none;
-    }
     &__wrapper {
       font-family: $raleway;
       display: grid;
@@ -113,13 +110,10 @@
 @media (max-width: 320px) {
   .header {
     .hide {
-      opacity: 0;
       display: none;
     }
-    &__burger, .show {
-      display: block;
-      opacity: 1;
-      
+    .list__wrapper.show {
+      top: -15px;
     }
     &__wrapper {
       margin-top: 20px;
@@ -141,19 +135,23 @@
       }
     }
     &__list{
-      display: none;
+      /* display: none; */
     }
-    .list {
-      &__wrapper ul {
+    .list { 
+      &__wrapper {
+        top:-120%;
+        transition: all 0.3s ease 0s;
         display: block;
         position: absolute;
         background: $white;
         left: 0;
-        top: -15px;
         padding: 100px 40px;
         width: 210px;
         height: 280px;
         border-radius: 0px 10px 10px 0px;
+        Ul {
+          display: block;
+        }
         li {
           margin: 20px 0;
         }
@@ -164,13 +162,15 @@
           width: 150px;
           height: 200px;
           padding: 0;
+          top: 140px;
+          left: 90px;
         }
       }
     }
     .phone {
       width: 40px;
       &__caption, &__number {
-        display: none;
+        display: block;
       }
       &__logo {
         width: 35px;
@@ -180,6 +180,7 @@
         position: absolute;
         left: 30px;
         top: 400px;
+        transition: all 0.3s ease 0s; 
         &__wrapper {
           font-family: $raleway;
           font-feature-settings: 'pnum' on, 'lnum' on;
@@ -203,4 +204,54 @@
     }
     
   }
+}
+
+
+.header__burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.header__burger span {
+  position: absolute;
+  background-color: $black;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 9px;
+  transition: all 0.3s ease 0s;
+}
+
+.header__burger::before,
+.header__burger::after{
+  content: '';
+  background-color: $black;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: px;
+  transition: all 0.3s ease 0s;
+}
+
+.header__burger::after{
+  bottom: 0;
+}
+
+.header__burger.show::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__burger.show::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.header__burger.show span {
+  transform: scale(0);
 }
