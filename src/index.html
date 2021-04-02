@@ -1,123 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <title>Hedgehog</title>
 </head>
+
 <body>
   <div class="container">
 
-    <div id="popup">
-      <div class="popup__container">
-        <div class="popup__wrapper">
-          <button class='popup__close-button'>
-            <span class="material-icons">
-            close
-            </span>
-          </button>
-
-          <div class="popup__headline">
-            получить бесплатную
-            консультацию
-          </div>
-          <select class="popup__dropdown">
-            <option value="Москва">Москва</option>
-            <option value="Санкт-Петербург">Санкт-Петербург</option>
-            <option value="Новосибирск">Новосибирск</option>
-            <option value="Екатеринбург">Екатеринбург</option>
-            <option value="Казань">Казань</option>
-            <option value="Нижний Новгород">Нижний Новгород</option>
-            <option value="Челябинск">Челябинск</option>
-            <option value="Омск">Омск</option>
-            <option value="Самара">Самара</option>
-          </select>
-          <input type="text" class="popup__input" placeholder="Ваше имя">
-          <input type="text" class="popup__input" placeholder="Телефон">
-          <div class="popup__checkbox">
-            <input type="checkbox" checked>
-            <label for="popup__checkbox">Хочу приобрести ёжика</label>
-          </div>
-          <div class="popup__checkbox">
-            <input type="checkbox">
-            <label for="popup__checkbox">Хочу узнать подробности об уходе</label>
-          </div>
-          <div class="popup__checkbox">
-            <input type="checkbox">
-            <label for="popup__checkbox">Хочу узнать подробности о покупке</label>
-          </div>
-          <button class="popup__button">Отправить</button>
-          <div class="popup__warning">
-            Нажимая кнопку ОТПРАВИТЬ вы соглашаетесь с 
-            <a href="#"> условиями обработки данных </a>
-          </div>
-      </div>
-    </div>
-    </div>
-
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__burger">
-          <span><!-- <img src="assets/burger.svg" alt=""> --></span>
-        </div>
-        <div class="header__logo">
-          <img src="./assets/logo-hover.webp" alt="" class="logo-hover">
-          <img src="./assets/logo.svg" alt="" class="logo">
-        </div>
-
-        <div class="header__menu">
-
-          <div class="header__list list">
-            <div class="list__wrapper">
-              <ul>
-                <span class="triangle-container">
-                  <span class="material-icons triangle_active">
-                    arrow_drop_down
-                  </span>
-                  <span class="material-icons triangle">
-                      arrow_right
-                  </span>
-                </span>
-                <li class="catalog">
-                  КАТАЛОГ
-                  <ul class="catalog__dropdown" style="display: none;">
-                    <li><a href="#"> ЁЖИКИ </a></li>
-                    <li><a href="#"> ПИТАНИЕ </a></li>
-                    <li><a href="#"> ПЕРЕНОСКИ </a></li>
-                    <li><a href="#"> ЛЕКАРСТВА </a></li>
-                  </ul>
-                </li>
-                <li><a href="#"> О НАС </a></li>
-                <li><a href="#"> КОНТАКТЫ </a></li>
-                <li><a href="#"> ГАЛЕРЕЯ </a></li>
-            </ul>
-            <div class="header__phone phone-dropdown">
-              <div class="phone-dropdown__wrapper">
-                <div class="phone-dropdown__caption">позвоните мне</div>
-                <div class="phone-dropdown__number">+7 (965) 569-89-98</div>
-              </div>
-            </div>
+        <div class="header__body">
+          <div class="header__logo-wrap">
+            <img class="header__logo" src="./assets/logo.webp" alt="logo">
+          </div>
+          <div class="header__content">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">каталог</li>
+                <li class="header__item">о нас</li>
+                <li class="header__item">контакты</li>
+                <li class="header__item">галерея</li>
+              </ul>
+            </nav>
+            <span class="header__contact">
+              <img 
+                class="header__contact-icon"
+                src="assets/contact-icon.svg"
+                alt="contact-icon"
+              >
+              <a class="header__contact-tel" href="tel:+7(965)569-89-98">+7 (965) 569-89-98</a>
+            </span>
+            <div class="header__cart-wrap">
+              <img 
+                class="header__cart" 
+                src="assets/cart.svg" 
+                alt="cart"
+              >
             </div>
           </div>
-
-          <div class="header__phone phone">
-            <div class="phone__wrapper">
-              <div class="phone__logo"><img src="./assets/phoneSign.svg" alt=""></div>
-              <div class="phone__caption">позвоните мне</div>
-              <div class="phone__number">+7 (965) 569-89-98</div>
-            </div>
-          </div>
-          <div class="header__cart">
-            <img src="assets/cart.svg" alt="">
-          </div>
-
         </div>
-
       </div>
     </header>
-    
+
     <section class="content-section">
 
       <div class="content-section__wrapper">
@@ -127,7 +57,8 @@
             <img src="assets/caption.svg" alt="">
           </div>
           <div class="content-section__tagline">тоже любят молоко</div>
-          <div class="content-section__text">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</div>
+          <div class="content-section__text">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и
+            царапать вашу мебель.</div>
           <div class="content-section__button">
             <button class="buy-button">Купить ёжика</button>
           </div>
@@ -180,19 +111,20 @@
       <div class="panel-section__wrapper">
 
         <div class="panel-section__unit unit yellow">
-          
+
           <div class="unit__wrapper">
             <div class="unit__pin-wrapper">
               <div class="unit__sale-pin">
-               -50%
+                -50%
               </div>
-              <div class="unit__info-pin">  
+              <div class="unit__info-pin">
                 <img src="assets/info.svg" alt="">
               </div>
             </div>
             <span class="unit__text">
               <div class="unit__name">Ежик “Евгений”</div>
-              <div class="unit__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </div>
+              <div class="unit__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой.
+                Ручной, любит внимаение </div>
               <div class="unit__old-price">3000 ₽</div>
               <div class="unit__price">1500 ₽</div>
             </span>
@@ -201,7 +133,7 @@
               <div class="unit__image">
                 <img src="assets/hedgehog3.webp" alt="">
               </div>
-              
+
               <div class="unit__button">
                 <img src="assets/addToCart.webp" alt="">
               </div>
@@ -224,7 +156,8 @@
 
             <span class="unit__text">
               <div class="unit__name">Ежик “Максим”</div>
-              <div class="unit__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </div>
+              <div class="unit__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой.
+                Ручной, любит внимаение </div>
               <div class="unit__old-price">3000 ₽</div>
               <div class="unit__price">1500 ₽</div>
             </span>
@@ -245,12 +178,13 @@
             <span class="unit__text">
               <div class="unit__name">Корм для
                 ёжиков</div>
-              <div class="unit__desc">Скомбинированое питание, которое содержит нужное количество витаминов и кальция</div>
+              <div class="unit__desc">Скомбинированое питание, которое содержит нужное количество витаминов и кальция
+              </div>
               <div class="unit__price">500 ₽</div>
             </span>
             <span class="unit__pick">
               <div class="unit__image">
-                <img src="assets/food.webp" alt="">
+                <img src="" alt="">
               </div>
               <div class="unit__button">
                 <img src="assets/addToCart.webp" alt="">
@@ -268,55 +202,57 @@
       <div class="footer__wrapper">
         <div class="footer__info">
           <div class="footer__logo">
-              <img src="./assets/logo-white.webp" alt="" class="logo">
+            <img src="" alt="" class="logo">
           </div>
 
           <div class="footer__text-container">
             <span class="footer__text">Все права защищены.</span>
-            <span class="footer__text">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</span>
+            <span class="footer__text">Указанная стоимость товаров и условия их приобретения действительны на текущую
+              дату.</span>
           </div>
         </div>
-  
-          
-  
-            <div class="footer__list list">
-              <div class="list__wrapper">
-                <ul>
-                  <li><a href="#">КАТАЛОГ</a></li>
-                  <li><a href="#"> О НАС </a></li>
-                  <li><a href="#"> КОНТАКТЫ </a></li>
-                  <li><a href="#"> ГАЛЕРЕЯ </a></li>
-              </ul>
-              </div>
-            </div>
 
-          <div class="footer__social">
-            <div class="footer__icon">
-              <a href="#"><img src="assets/insta.svg" alt=""></a>
-            </div>
-            <div class="footer__icon">
-              <a href="#"><img src="assets/facebook.svg" alt=""></a>
-            </div>
-            <div class="footer__icon">
-              <a href="#"><img src="assets/twitter.svg" alt=""></a>
-            </div>
+
+
+        <div class="footer__list list">
+          <div class="list__wrapper">
+            <ul>
+              <li><a href="#">КАТАЛОГ</a></li>
+              <li><a href="#"> О НАС </a></li>
+              <li><a href="#"> КОНТАКТЫ </a></li>
+              <li><a href="#"> ГАЛЕРЕЯ </a></li>
+            </ul>
           </div>
-  
-            <div class="footer__phone phone">
-              <div class="phone__wrapper">
-                <div class="phone__caption">позвоните мне</div>
-                <div class="phone__number">+7 (965) 569-89-98</div>
-              </div>
-            </div>
+        </div>
+
+        <div class="footer__social">
+          <div class="footer__icon">
+            <a href="#"><img src="assets/insta.svg" alt=""></a>
+          </div>
+          <div class="footer__icon">
+            <a href="#"><img src="assets/facebook.svg" alt=""></a>
+          </div>
+          <div class="footer__icon">
+            <a href="#"><img src="assets/twitter.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="footer__phone phone">
+          <div class="phone__wrapper">
+            <div class="phone__caption">позвоните мне</div>
+            <div class="phone__number">+7 (965) 569-89-98</div>
+          </div>
+        </div>
       </div>
     </footer>
-    
 
- 
 
-  
 
-  
-  <script src="./index.js"></script>
+
+
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

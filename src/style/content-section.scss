@@ -3,6 +3,7 @@
     display: grid;
     grid-template-rows: 500px 500px;
   }
+
   &__head {
     display: grid;
     grid-template-rows: 115px 75px 55px 70px;
@@ -11,37 +12,42 @@
     width: 700px;
     height: 350px;
   }
-  &__caption {
-    
-  }
+
+  &__caption {}
+
   &__tagline {
     font-size: 50px;
     font-family: $cormorant;
     color: $light-green;
     text-transform: uppercase;
   }
+
   &__text {
     font-family: $raleway;
     font-size: 14px;
   }
-  &__button {
-  }
+
+  &__button {}
+
   &__aside {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 460px 1000px 440px;
   }
+
   &__pic_left {
     height: 500px;
     display: flex;
     align-items: flex-end;
   }
+
   &__desc {
     display: grid;
     grid-template-columns: 300px 380px 300px;
     text-align: center;
     align-items: center;
   }
+
   &__pic_rught {
     display: grid;
     justify-content: right;
@@ -59,6 +65,7 @@
   font-family: $raleway;
   font-size: 14px;
   box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+
   &:hover {
     color: $dark-green;
     background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
@@ -73,6 +80,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   &__icon {
     display: flex;
     align-items: center;
@@ -83,24 +91,29 @@
     border-radius: 50%;
     margin: auto;
     box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
-     &.hedgehog {
+
+    &.hedgehog {
       background-color: $soft-yellow;
       margin-top: 50px;
     }
+
     &.syringe {
       background-color: $soft-green;
     }
+
     &.heart {
       background-color: $light-green;
       margin-top: 50px;
     }
   }
+
   &__title {
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
     margin: auto;
   }
+
   &__subtitle {
     line-height: 22px;
     margin: auto;
@@ -110,3 +123,11 @@
 }
 
 
+@media (max-width: 320px) {
+  .content-section {
+    &__wrapper {
+      max-width: 280px;
+      margin: auto;
+    }
+  }
+}
