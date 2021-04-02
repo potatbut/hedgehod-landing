@@ -13,7 +13,7 @@
   }
   &__content {
     display: inherit;
-    grid-template-columns: 51% 44% 5%;
+    grid-template-columns: 51% 1fr 10%;
     align-items: end;
     justify-content: space-between;
   }
@@ -27,10 +27,12 @@
   }
   &__contact {
     display: grid;
-    grid-template-columns: 20% 50%;
-    justify-content: end;
+    width: 70%;
+    grid-template-columns: 30% 1fr;
+    justify-self: end;
     align-items: center;
     &-tel {
+      min-width: 205px;
       font-size: 22px;
       font-family: $raleway;
       font-feature-settings: 'pnum' on, 'lnum' on;
@@ -39,5 +41,6 @@
   
   &__cart-wrap {
     align-self: center;
+    justify-self: end;
   }
 }

@@ -1,0 +1,22 @@
+.content {
+  &__body {
+    width: 100%;
+  }
+  &__head {
+    width: 30%;
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 40% 20% 5% 35%;
+    align-items: end;
+  }
+  &__subtitle {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: $light-green;
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+}
