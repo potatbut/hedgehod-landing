@@ -10,6 +10,10 @@
 @import './buy-button.scss';
 @import './slider.scss';
 @import './info-block.scss';
+@import './request.scss';
+@import './choose-button.scss';
+@import './radio-input.scss';
+@import './reminder.scss';
 
 $slick-font-path: "../../node_modules/slick-carousel/slick/fonts/" !default;
 $slick-font-family: "slick" !default;
@@ -26,6 +30,7 @@ body {
   height: 100%;
   margin: 0;
 }
+
 
 a {
   text-decoration: none;
@@ -57,3 +62,6 @@ input {
     border: none;
 }
 
+.show {
+  top: 17%;
+}

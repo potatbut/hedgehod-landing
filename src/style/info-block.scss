@@ -1,9 +1,12 @@
 .info-block {
-  display: flex;
-  padding: 15px;
+  display: inline-flex;
+  position: absolute;
+  z-index: 999999;
+  padding: 15px 5px;
   background: $dark-green;
   font-family: $raleway;
   font-feature-settings: 'pnum' on, 'lnum' on;
+  top: -120%;
   &__text {
     padding: 15px;
     display: flex;
@@ -12,7 +15,7 @@
   ::after {
     content: ''; 
     position: absolute; 
-    left: 45%; 
+    left: 50%; 
     top: -19px;
     border: 10px solid transparent; 
     border-bottom: 10px solid $dark-green;

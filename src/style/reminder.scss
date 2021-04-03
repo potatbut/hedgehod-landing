@@ -1,0 +1,19 @@
+.reminder {
+  &__wrapper {
+    width: 27%;
+    margin: 10% auto;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__bottom-text {
+    font-family: $raleway;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+}

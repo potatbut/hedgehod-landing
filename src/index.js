@@ -6,12 +6,11 @@ import 'slick-carousel/slick/slick.min';
 
 console.log('ДОБРЫЙ ДЕНЬ')
 
-const catalog = document.querySelector('.catalog')
 const dropdown = document. querySelector('.catalog__dropdown')
 const triangle = document.querySelector('.triangle')
 const triangleActive = document.querySelector('.triangle_active')
 
-$(catalog).click(function() {
+/* $(catalog).click(function() {
   $(dropdown).toggle(500)
   $(triangle).toggle()
   $(triangleActive).toggle()
@@ -24,27 +23,7 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation()
 });
-
-
-function showModal() {
-  $('#popup').fadeIn('fast')
-}
-
-$('.popup__close-button').click(function(){
-  $('#popup').fadeOut(500)
-})
-$('.popup__button').click(function(){
-  $('#popup').fadeOut(500)
-})
-
-$(document).on('click', function(e) {
-  if (!$(e.target).closest('.popup__container').length) {
-    $('#popup').fadeOut(500)
-  }
-  e.stopPropagation()
-});
-
-setTimeout(showModal, 5000);
+ */
 
 $('.header__burger').click(function(event) {
   $('.list__wrapper, .phone-dropdown, .header__burger').toggleClass("show")
@@ -53,5 +32,10 @@ $('.header__burger').click(function(event) {
 $('.slider__wrapper').slick({
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  variableWidth: true,
 });
+
+$('.slide__info-badge').click(function(e) {
+ $(e.target.querySelector(".info-block")).toggleClass("show")
+})

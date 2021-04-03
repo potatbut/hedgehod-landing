@@ -1,0 +1,12 @@
+.choose-button {
+  padding: 16px 21px;
+  font-size: 14px;
+  background: $white;
+  border: 2px solid $light-green;
+  box-sizing: border-box;
+  border-radius: 61px;
+  &:hover {
+    background: $light-green;
+    color: $white;
+  }
+}

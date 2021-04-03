@@ -1,0 +1,58 @@
+.request {
+  &__wrapper {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 30px;
+    background: $swamp-green;
+  }
+  &__body {
+    max-width: 1100px;
+    position: relative;
+    margin: inherit;
+    padding: 40px 40px 80px 0px;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px 0;
+  }
+  &__button {
+    margin-left: 0.5%;
+  }
+  &__checks {
+    display: inherit;
+    padding-left: 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    font-size: 14px;
+  }
+  &__mark, &__name {
+    cursor: pointer;
+  }
+  .request-input{
+    &::placeholder {
+    color: $dark-green;
+    }
+    padding: 24px;
+    border-radius: 8px;
+  }
+  &__questionnaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+  }
+  &__comment {
+    grid-column: 1 / 4;
+  }
+  &__btn {
+    position: absolute;
+    padding: 40px;
+    margin: auto;
+    left: 30%;
+  }
+}
