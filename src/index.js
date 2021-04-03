@@ -1,6 +1,9 @@
 import "./import-jquery"
 import './style/style.scss'
 
+import "slick-carousel"
+import 'slick-carousel/slick/slick.min';
+
 console.log('ДОБРЫЙ ДЕНЬ')
 
 const catalog = document.querySelector('.catalog')
@@ -46,3 +49,9 @@ setTimeout(showModal, 5000);
 $('.header__burger').click(function(event) {
   $('.list__wrapper, .phone-dropdown, .header__burger').toggleClass("show")
 })
+
+$('.slider__wrapper').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1
+});

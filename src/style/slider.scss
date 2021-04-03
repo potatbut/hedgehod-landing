@@ -1,0 +1,82 @@
+.slider {
+  &__wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+  &__slide {
+    border-radius: 20px;
+  }
+
+  .slide {
+    margin: 15px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      background: linear-gradient(-45deg, $white 50px, transparent 0);
+      padding-top: -6px;
+    }
+    &__sale-badge {
+      padding: 6px;
+      background: $light-green;
+      font-family: $raleway;
+      color: $white;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      font-size: 1.25rem;
+    }
+    &__column {
+      &-info {
+        padding-left: 60px;
+      }
+      &-depiction {
+        display: grid;
+        grid-template-rows: 60px 300px 40px;
+        position: relative;
+      }
+    }
+    &__text {
+      padding-top: 20px;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+    &__subtitle {
+      font-family: $raleway;
+      color: $black;
+    }
+    &__old-price {
+      color: $grey;
+      text-decoration-line: line-through;
+      font-size: 1.25rem;
+    }
+    &__new-price {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    &__info-badge {
+      margin-left: 65%;
+      padding: 19px;
+      cursor: pointer;
+      &:hover {
+        
+      }
+    }
+    &__info-block {
+      position: absolute;
+      top: 17%;
+      left: 46%;
+      color: $white;
+      display: none;
+    }
+    &__add-button {
+      margin-left: 75%;
+    }
+  }
+  .slick-prev:before {
+    content: url('../assets/arrow-left.svg');
+}
+  .slick-next:before {
+    content: url('../assets/arrow-right.svg');
+  }
+}

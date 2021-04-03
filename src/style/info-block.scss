@@ -1,0 +1,20 @@
+.info-block {
+  display: flex;
+  padding: 15px;
+  background: $dark-green;
+  font-family: $raleway;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  &__text {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  ::after {
+    content: ''; 
+    position: absolute; 
+    left: 45%; 
+    top: -19px;
+    border: 10px solid transparent; 
+    border-bottom: 10px solid $dark-green;
+   }
+}
