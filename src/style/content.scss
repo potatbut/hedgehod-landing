@@ -93,8 +93,8 @@
 @media (max-width: 992px) {
   .content {
     &__section {
-      column-gap: 40%;
-      padding: 10% 0 5% 15%;
+      column-gap: 30%;
+      padding: 10% 15% 5% 15%;
     }
     .column {
       text-align: left;
@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .content {
     &__head {
       padding-top: 1vw;
@@ -136,8 +136,8 @@
     }
     &__section {
       grid-template-columns: repeat(3, 92px);
-      column-gap: 20%;
-      padding: 5% 0 5% 15%;
+      column-gap: 0%;
+      padding: 5% 0% 5% 15%;
     }
     .column {
       &__icon {
@@ -159,17 +159,18 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 400px;
-      z-index: 0;
+      width: 350px;
+      z-index: 1;
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .content {
     &__section {
       grid-template-columns: repeat(2, 92px);
-      padding: 5% 15% 5% 15%;
+      column-gap: 5%;
+      padding: 5% 5% 5% 15%;
     }
     &__image_right {
       width: 250px;
