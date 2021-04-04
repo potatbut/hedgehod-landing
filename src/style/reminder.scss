@@ -1,7 +1,7 @@
 .reminder {
   &__wrapper {
-    width: 27%;
     margin: 10% auto;
+    width: 18%;
   }
   &__title {
     display: flex;
@@ -10,10 +10,10 @@
     font-size: 24px;
   }
   &__bottom-text {
+    margin: auto;
+    width: 60%;
     font-family: $raleway;
     font-feature-settings: 'pnum' on, 'lnum' on;
     text-align: center;
-    margin: auto;
-    width: 60%;
   }
 }

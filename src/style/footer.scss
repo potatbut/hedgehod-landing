@@ -1,0 +1,27 @@
+.footer {
+  &__wrapper {
+    background: $light-green;
+    color: $white;
+  }
+  &__body {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    padding: 3%;
+    justify-content: space-between;
+    grid-template-columns: 40% 30% 15% 1fr;
+  }
+  &__column {
+    display: grid;
+  }
+  &__logo {
+    padding-bottom: 25px;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__tel {
+    text-align: end;
+  }
+}

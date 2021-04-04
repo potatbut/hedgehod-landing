@@ -17,26 +17,12 @@
     align-items: end;
     justify-content: space-between;
   }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    line-height: 19px;
-    font-weight: bold;
-    cursor: pointer;
-  }
   &__contact {
     display: grid;
     width: 70%;
     grid-template-columns: 30% 1fr;
     justify-self: end;
     align-items: center;
-    &-tel {
-      min-width: 205px;
-      font-size: 22px;
-      font-family: $raleway;
-      font-feature-settings: 'pnum' on, 'lnum' on;
-    }
   }
   
   &__cart-wrap {
