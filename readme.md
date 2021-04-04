@@ -7,6 +7,7 @@
 --------
 
 Адаптивная посадочная страница. / Responsive landing page.
+--------
 В проекте использованы: The project used:
 - Parcel bundler
 - Scss 
