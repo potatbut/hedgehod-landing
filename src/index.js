@@ -26,6 +26,7 @@ $('.slider__wrapper').slick({
       }
     }, 
     {
+      variableWidth: true,
       breakpoint: 768,
       settings: {
         slidesToShow: 1,

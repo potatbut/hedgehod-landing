@@ -121,7 +121,7 @@
       max-width: 272px;
     }
     .buy-btn {
-      width: 281px;
+      width: 270px;
       height: 59px;
     }
     .title-image {
@@ -135,7 +135,7 @@
       font-size: 0.75rem;
     }
     &__section {
-      grid-template-columns: repeat(3, 92px);
+      grid-template-columns: repeat(2, 92px);
       column-gap: 40%;
       padding: 5% 0 5% 15%;
     }
@@ -161,6 +161,17 @@
       right: 0;
       width: 400px;
       z-index: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    &__section {
+      column-gap: 15%;
+    }
+    &__image_right {
+      width: 250px;
     }
   }
 }
