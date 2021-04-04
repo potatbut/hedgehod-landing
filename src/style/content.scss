@@ -135,8 +135,8 @@
       font-size: 0.75rem;
     }
     &__section {
-      grid-template-columns: repeat(2, 92px);
-      column-gap: 40%;
+      grid-template-columns: repeat(3, 92px);
+      column-gap: 20%;
       padding: 5% 0 5% 15%;
     }
     .column {
@@ -168,7 +168,8 @@
 @media (max-width: 480px) {
   .content {
     &__section {
-      column-gap: 15%;
+      grid-template-columns: repeat(2, 92px);
+      padding: 5% 15% 5% 15%;
     }
     &__image_right {
       width: 250px;
