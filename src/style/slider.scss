@@ -4,18 +4,21 @@
     padding-left: 50px;
     margin: auto;
   }
+  .slick-list {
+    padding: 20px 0;
+  }
   &__slide {
-    border-radius: 20px;
+    margin: 0 30px;
   }
   .slide {
-    margin: 30px;
     max-width: 570px;
+    height: 397px;
+    border-radius: 20px;
     &__wrapper {
-      margin: auto;
+      height: 100%;
       display: grid;
-      grid-template-columns: 40% 1fr;
+      grid-template-columns: 40% 60%;
       background: linear-gradient(-45deg, $white 50px, transparent 0);
-      padding-top: -6px;
     }
     &__sale-badge {
       padding: 6px;
@@ -31,46 +34,52 @@
       }
       &-depiction {
         display: grid;
-        grid-template-rows: 60px 300px 40px;
         position: relative;
+        grid-template-rows: 60px 50px;
+        justify-items: right;
+        align-items: center;
+        row-gap: 72%;
       }
     }
     &__text {
-      padding-top: 20px;
+      padding-top: 30px;
+      height: 60%;
     }
     &__title {
       font-weight: bold;
       font-size: 2.5rem;
-      margin: 20px 0;
     }
     &__subtitle {
       font-family: $raleway;
       color: $black;
     }
     &__old-price {
-      color: $grey;
       text-decoration-line: line-through;
       font-size: 1.25rem;
+      color: $grey;
     }
     &__new-price {
       font-size: 2.5rem;
       font-weight: bold;
     }
+    &__info-block-min {
+      display: none;
+    }
     &__info-badge {
-      margin-left: 65%;
-      padding: 19px 0 0 19px;
+      padding: 19px;
       cursor: pointer;
       img {
         pointer-events: none;
       }
     }
     &__info-block {
-      
       left: 46%;
       color: $white;
     }
-    &__add-button {
-      margin-left: 75%;
+    &__image {
+      position: absolute;
+      bottom: 0;
+      right: -50px;
     }
   }
   .slick-prev:before {
@@ -80,3 +89,64 @@
     content: url('../assets/arrow-right.svg');
   }
 }
+
+@media (max-width: 1440px) {
+  .slider {
+    &__wrapper {
+      max-width: 1100px;
+      margin: auto;
+    }
+  }
+}
+/* 
+@media (max-width: 768px) {
+  .slider {
+    &__wrapper {
+      padding: 0;
+    }
+    .slide {
+      &__column-info {
+        padding-left: 30px;
+      }
+      &__column-depiction {
+        align-items: flex-end;
+      }
+      &__image {
+        width: 200px;
+        // position: absolute;
+      }
+      &__title {
+        font-size: 30px;
+      }
+      &__subtitle {
+        font-size: 11px;
+        float: left;
+      }
+      &__info-badge {
+        display: none;
+      }
+      &__add-button {
+        margin-left: 60%;
+      }
+      &__info-block-min {
+        max-width: 200px;
+        margin-left: 2%;
+        font-size: 10px;
+        display: inline-flex;
+        font-family: $raleway;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+      }
+      .info-block-min {
+        &__text {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+} */

@@ -17,11 +17,34 @@
   &__logo {
     padding-bottom: 25px;
   }
+  &__nav ul{
+    display: flex;
+  }
   &__social {
     display: flex;
     justify-content: space-evenly;
   }
+  &__link {
+    &:hover {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
   &__tel {
     text-align: end;
   }
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    &__body {
+      grid-template-columns: 40% 15% 15% 1fr;
+    }
+    &__nav ul{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  
 }

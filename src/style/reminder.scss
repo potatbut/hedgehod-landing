@@ -1,19 +1,18 @@
 .reminder {
   &__wrapper {
     margin: 10% auto;
-    width: 18%;
+    max-width: 350px;
   }
   &__title {
     display: flex;
-    align-items: center;
     font-weight: bold;
     font-size: 24px;
   }
   &__bottom-text {
+    max-width: 200px;
     margin: auto;
-    width: 60%;
+    text-align: center;
     font-family: $raleway;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    text-align: center;
   }
 }

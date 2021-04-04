@@ -6,10 +6,9 @@
     background: $swamp-green;
   }
   &__body {
-    max-width: 1100px;
     position: relative;
     margin: inherit;
-    padding: 40px 40px 80px 0px;
+    padding: 40px 40px 80px 40px;
   }
   &__title {
     font-size: 45px;
@@ -42,7 +41,7 @@
   }
   &__questionnaire {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto);
     column-gap: 20px;
     row-gap: 15px;
   }
@@ -54,5 +53,18 @@
     padding: 40px;
     margin: auto;
     left: 30%;
+  }
+  .buy-btn {
+    width: 328px;
+    height: 69px;
+  }
+}
+
+@media (max-width: 992px) {
+  .request {
+    &__form {
+      grid-template-columns: 30% 1fr;
+      align-items: center;
+    }
   }
 }

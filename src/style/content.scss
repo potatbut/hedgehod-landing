@@ -1,7 +1,7 @@
 .content {
   &__head {
     margin: auto;
-    padding-top: 200px;
+    padding-top: 10vw;
     text-align: center;
     display: grid;
     align-items: end;
@@ -15,13 +15,19 @@
   &__text {
     padding-bottom: 34px;
     font-family: $raleway;
+    color: $light-green;
   }
   &__btn {
     margin: 0 auto;
   }
+  .buy-btn {
+    width: 328px;
+    height: 69px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
   &__section {
     display: grid;
@@ -32,9 +38,6 @@
   }
   .column {
     text-align: center;
-    &:first-child, &:nth-child(3) {
-      padding-top: 40px;
-    }
     &__head {
       &_yellow, &_soft-green, &_light-green {
         cursor: pointer;
@@ -71,5 +74,93 @@
   }
   &__image {
     align-self: flex-end;
+  }
+}
+
+@media (max-width: 1440px) {
+  .content {
+    &__image_left {
+      display: none;
+    }
+    &__section {
+      align-items: baseline;
+      padding: 5% 0 5% 5%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    &__section {
+      column-gap: 40%;
+      padding: 10% 0 5% 15%;
+    }
+    .column {
+      text-align: left;
+      z-index: 999;
+      &:nth-child(2) {
+        grid-column: 1;
+      }
+    }
+    &__image_right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 600px;
+      z-index: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    &__head {
+      padding-top: 1vw;
+      text-align: start;
+      max-width: 272px;
+    }
+    .buy-btn {
+      width: 281px;
+      height: 59px;
+    }
+    .title-image {
+      width: 200px;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+      padding: 2% 0;
+    }
+    &__text {
+      font-size: 0.75rem;
+    }
+    &__section {
+      grid-template-columns: repeat(3, 92px);
+      column-gap: 40%;
+      padding: 5% 0 5% 15%;
+    }
+    .column {
+      &__icon {
+        width: 36px;
+      }
+      &__head {
+        &_yellow, &_soft-green, &_light-green {
+          height: 92px;
+        }
+      }
+      &__title {
+        font-size: 14px;
+      }
+      &__subtitle {
+        font-size: 10px;
+      }
+    }
+    &__image_right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 400px;
+      z-index: 0;
+    }
   }
 }
