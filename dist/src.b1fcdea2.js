@@ -19,4 +19,4 @@ var i;!function(e){"use strict";"function"==typeof i&&i.amd?i(["jquery"],e):"und
 },{"jquery":"juYr"}],"Focm":[function(require,module,exports) {
 "use strict";require("./import-jquery"),require("./style/style.scss"),require("slick-carousel"),require("slick-carousel/slick/slick.min"),console.log("ДОБРЫЙ ДЕНЬ"),$(".slider__wrapper").slick({infinite:!0,slidesToShow:2,slidesToScroll:1,variableWidth:!0,responsive:[{breakpoint:1440,settings:{slidesToShow:1}},{breakpoint:1200,settings:{slidesToShow:1,arrows:!1}},{variableWidth:!0,breakpoint:768,settings:{slidesToShow:1,variableWidth:!1,arrows:!1}}]}),$(".slide__info-badge").click(function(e){$(e.target.querySelector(".info-block")).toggleClass("show")}),$(".header__burger").click(function(e){$(".header__burger, .header__nav, .header__tel").toggleClass("display")});
 },{"./import-jquery":"VDzX","./style/style.scss":"AKbp","slick-carousel":"QAGU","slick-carousel/slick/slick.min":"YK3c"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.feddbef3.js.map
+//# sourceMappingURL=src.b1fcdea2.js.map
